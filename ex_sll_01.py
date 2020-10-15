@@ -34,7 +34,7 @@ class LinkList:
     def isEmpty(self):
         return self.head.next is None
 
-    def length(self):  # ???????
+    def length(self):
         p = self.head.next
         length = 0
         while p is not None:

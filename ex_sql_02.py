@@ -1,7 +1,8 @@
-from ex_sql_01 import  SqList
+from ex_sql_01 import SqList
+
 
 def SQLcombine(sql0, sql1):
-    SQLc = SqList(sql0.length()+sql1.length())
+    SQLc = SqList(sql0.length() + sql1.length())
     i = 0
     j = 0
     while i < sql0.length() and (j < sql1.length()):
@@ -39,6 +40,7 @@ def SQLcombine(sql0, sql1):
     '''
     return SQLc
 
+
 SQLa = SqList(9)
 SQLb = SqList(10)
 a = [0, 2, 4, 6, 8, 10, 11, 12, 15]
@@ -48,4 +50,3 @@ for i in range(0, len(a)):
 for i in range(0, len(b)):
     SQLb.insert(i, b[i])
 SQLcombine(SQLa, SQLb).display()
-
